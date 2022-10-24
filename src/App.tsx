@@ -271,7 +271,7 @@ function App() {
               <div className="nav-drop-item">About</div>
               <div className="nav-drop-item">Contact</div>
             </div>
-            <a href=".">
+            <a href="." aria-label="brand logo">
               <img className="nav-logo" src="images/logo.svg" alt="" />
             </a>
             <div className="nav-items">
