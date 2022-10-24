@@ -4,11 +4,11 @@ import exampleProduct from "./api/data";
 import "./App.css";
 
 function toImage(name: string): string {
-  return "/images/".concat(name.concat(".jpg"));
+  return "images/".concat(name.concat(".jpg"));
 }
 
 function toThumbnail(name: string): string {
-  return "/images/".concat(name.concat("-thumbnail.jpg"));
+  return "images/".concat(name.concat("-thumbnail.jpg"));
 }
 
 const CloseButton = () => {
@@ -252,7 +252,7 @@ function App() {
             <img
               onClick={onClickMenu}
               className="nav-menu"
-              src="/images/icon-menu.svg"
+              src="images/icon-menu.svg"
               alt=""
             />
             <div className="nav-dropdown" ref={dropdownRef}>
@@ -260,7 +260,7 @@ function App() {
                 <img
                   onClick={onClickMenu}
                   className="nav-button-close"
-                  src="/images/icon-close.svg"
+                  src="images/icon-close.svg"
                   alt=""
                 />
               </div>
@@ -272,7 +272,7 @@ function App() {
               <div className="nav-drop-item">Contact</div>
             </div>
             <a href="/">
-              <img className="nav-logo" src="/images/logo.svg" alt="" />
+              <img className="nav-logo" src="images/logo.svg" alt="" />
             </a>
             <div className="nav-items">
               <span className="nav-item">Collections</span>
@@ -287,7 +287,7 @@ function App() {
               <img
                 onClick={onClickCart}
                 className="nav-cart"
-                src="/images/icon-cart.svg"
+                src="images/icon-cart.svg"
                 alt=""
               />
               {cartItems && <div className="cart-count">{commandCount}</div>}
@@ -323,7 +323,7 @@ function App() {
                       <img
                         className="pointer-cursor"
                         onClick={onClickDeleteItem}
-                        src="/images/icon-delete.svg"
+                        src="images/icon-delete.svg"
                         alt=""
                       />
                     </div>
@@ -340,7 +340,7 @@ function App() {
             <div className="avatar-container">
               <img
                 className="nav-avatar"
-                src="/images/image-avatar.png"
+                src="images/image-avatar.png"
                 alt=""
               />
             </div>
@@ -360,10 +360,10 @@ function App() {
                   alt=""
                 />
                 <button onClick={onClickPrev} className="prod-button-prev">
-                  <img className="" src="/images/icon-previous.svg" alt="" />
+                  <img className="" src="images/icon-previous.svg" alt="" />
                 </button>
                 <button onClick={onClickNext} className="prod-button-next">
-                  <img className="" src="/images/icon-next.svg" alt="" />
+                  <img className="" src="images/icon-next.svg" alt="" />
                 </button>
 
                 <div className="product-small-images">
@@ -420,7 +420,7 @@ function App() {
                 <button className="add-button" onClick={onClickAdd}>
                   <img
                     className="cart-icon"
-                    src="/images/icon-cart.svg"
+                    src="images/icon-cart.svg"
                     alt=""
                   />
                   Add to cart
