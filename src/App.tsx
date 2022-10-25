@@ -1,7 +1,7 @@
 import React from "react";
 import exampleProduct from "./api/data";
 
-import "./App.css";
+import "./App.scss";
 
 function toImage(name: string): string {
   return "images/".concat(name.concat(".jpg"));
