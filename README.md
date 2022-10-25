@@ -37,6 +37,7 @@ On mobile:
 
 ### Links
 
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-qr-code-component-using-css-flexbox-Ih570uVZZl](https://www.frontendmentor.io/solutions/responsive-qr-code-component-using-css-flexbox-Ih570uVZZl)
 - Live Site URL: [https://justgo97.github.io/ecommerce-product-page/](https://justgo97.github.io/ecommerce-product-page/)
 
 ## My process
