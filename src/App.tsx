@@ -231,22 +231,28 @@ function App() {
           <div className="product-small-images">
             {exampleProduct.images.map((value, index) => {
               return (
-                <img
+                <div
                   key={index}
-                  onClick={(event) => onClickPageThumbnail(value)}
                   className={
                     "product-thumbnail " +
                     (value === currentPageImage && "thumbnail-selected")
                   }
-                  src={toThumbnail(value)}
-                  alt=""
-                />
+                >
+                  <img
+                    key={index}
+                    onClick={(event) => onClickPageThumbnail(value)}
+                    className="thumbnail-image"
+                    src={toThumbnail(value)}
+                    alt=""
+                  />
+                </div>
               );
             })}
           </div>
         </div>
       </div>
       <div className="App">
+        {/* Navbar */}
         <nav>
           <div className="nav-start">
             <img
@@ -346,9 +352,7 @@ function App() {
             </div>
           </div>
         </nav>
-        <div>
-          <hr className="nav-hr" />
-        </div>
+
         <div className="main-product">
           <div className="main-card">
             <div className="product-display">
@@ -369,16 +373,20 @@ function App() {
                 <div className="product-small-images">
                   {exampleProduct.images.map((value, index) => {
                     return (
-                      <img
+                      <div
                         key={index}
-                        onClick={(event) => onClickThumbnail(value)}
                         className={
                           "product-thumbnail " +
                           (value === currentImage && "thumbnail-selected")
                         }
-                        src={toThumbnail(value)}
-                        alt=""
-                      />
+                      >
+                        <img
+                          className="thumbnail-image"
+                          onClick={(event) => onClickThumbnail(value)}
+                          src={toThumbnail(value)}
+                          alt=""
+                        />
+                      </div>
                     );
                   })}
                 </div>
