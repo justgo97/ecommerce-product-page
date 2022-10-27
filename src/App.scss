@@ -340,6 +340,7 @@ hr {
       flex-direction: column;
       flex: 1;
       min-width: 380px;
+      max-width: 500px;
 
       .product-image-container {
         position: relative;
@@ -601,6 +602,7 @@ hr {
 
       .product-display {
         min-width: 0;
+        max-width: 100%;
 
         .product-image-container {
           .product-img {
