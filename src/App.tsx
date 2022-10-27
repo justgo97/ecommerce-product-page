@@ -355,6 +355,7 @@ function App() {
 
         <div className="main-product">
           <div className="main-card">
+            <div className="main-margin-left"></div>
             <div className="product-display">
               <div className="product-image-container">
                 <img
@@ -435,6 +436,8 @@ function App() {
                 </button>
               </div>
             </div>
+
+            <div className="main-margin-right"></div>
           </div>
         </div>
         <div className="attribution">
