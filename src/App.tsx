@@ -212,9 +212,23 @@ function App() {
     backdropRef.current.style.display = "block";
   }
 
+  function onClickBackdrop() {
+    if (imagesRef.current === null) return;
+    if (backdropRef.current === null) return;
+    if (dropdownRef.current === null) return;
+
+    imagesRef.current.style.display = "none";
+    backdropRef.current.style.display = "none";
+    dropdownRef.current.style.display = "none";
+  }
+
   return (
     <main>
-      <div className="page-opacity" ref={backdropRef}></div>
+      <div
+        onClick={onClickBackdrop}
+        className="page-opacity"
+        ref={backdropRef}
+      ></div>
       <div className="page-images" ref={imagesRef}>
         <div className="page-image-container">
           <img className="page-img" src={toImage(currentPageImage)} alt="" />
